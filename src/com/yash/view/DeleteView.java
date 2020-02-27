@@ -15,6 +15,8 @@ public class DeleteView {
 				System.out.println("please give intern id");
 				int interId = sc.nextInt();
 				Interns deleteIntern=InternController.getInstance().getInternById(interId);
+				System.out.println("This are intern details");
+				System.out.println(deleteIntern);
 				System.out.println("1.enter 1 for deleting ");
 				System.out.println("2.enter other value for cancel");
 				int o=sc.nextInt();
