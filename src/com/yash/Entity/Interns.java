@@ -38,13 +38,12 @@ public class Interns {
 		this.level = level;
 	}
 	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + internAge;
-		result = prime * result + ((internFirstName == null) ? 0 : internFirstName.hashCode());
-		result = prime * result + ((internLastName == null) ? 0 : internLastName.hashCode());
+		result = prime * result + id;
 		return result;
 	}
 	@Override
@@ -56,17 +55,7 @@ public class Interns {
 		if (getClass() != obj.getClass())
 			return false;
 		Interns other = (Interns) obj;
-		if (internAge != other.internAge)
-			return false;
-		if (internFirstName == null) {
-			if (other.internFirstName != null)
-				return false;
-		} else if (!internFirstName.equals(other.internFirstName))
-			return false;
-		if (internLastName == null) {
-			if (other.internLastName != null)
-				return false;
-		} else if (!internLastName.equals(other.internLastName))
+		if (id != other.id)
 			return false;
 		return true;
 	}

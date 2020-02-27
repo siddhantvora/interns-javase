@@ -1,6 +1,6 @@
 package com.yash.demo;
 
-import com.yash.view.MainView.MainView;
+import com.yash.view.MainView;
 
 public class InternClient {
 	public static void main(String[] args) {
